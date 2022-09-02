@@ -6,5 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String Template</title>
   </head>
-  <body></body>
+  <body>
+    <script>
+      const name = "Ahmad Ja'far Ali";
+      const firstName = "Ahmad";
+      const middleName = "Ja'far";
+      const lastName = "Ali";
+      const template = `Name : ${firstName} ${middleName} ${lastName}`;
+      console.log(template);
+
+      const nilai = 90;
+      const template2 = `Name : ${name}, lulus : ${nilai > 75}`;
+      console.log(template2);
+
+      const multiline = `Nama saya Ja'far
+      Sekarang lagi kuliah
+      Sering juga pergi ke warkop
+      Saat mager ya tidur`;
+
+      document.writeln("<pre>");
+      document.writeln(multiline);
+      document.writeln("</pre>");
+    </script>
+  </body>
 </html>
