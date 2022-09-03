@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Array</title>
+  </head>
+  <body>
+    <script>
+      /*
+        array.push(value) : menambah data ke array
+        array.length : menambah panjang array
+        array.[index] : mendapat data di posisi index
+        array.[index] = value : mengubah data di posisi index
+        delete.array[index] : menghapus data di index, namun index tidak bergeser
+        */
+      let arrayKosong = [];
+
+      let arrayNama = ["Ahmad", "Ja'far", "Ali"]; //data ke 0, 1, 2
+
+      //cara menambahkan array
+      const names = [];
+      names.push("Ahmad"); // data ke 0
+      names.push("Ja'far", "Ali"); // data ke 1 dan 2
+      names.push("Salsabila", "Putri", "Cantika"); // dan seterusnya
+
+      //cara melihat isi array dalam bentuk table
+      // buka file html, klik kanan pada browser, pilih inspect lalu pilih console
+
+      console.table(names);
+
+      console.log(names[0]);
+      console.log(names[1]);
+      console.log(names[2]);
+
+      names[0] = "Fullstack";
+      names[1] = "Web";
+      names[2] = "Development";
+
+      console.table(names);
+
+      delete name[3]; //menghapus array
+      console.table(names);
+
+      names.push("Ja'far Lagi");
+      console.table(names);
+
+      // menambahkan array yang tadi di hapus
+      names[3] = "Ja'far Lagi"; // tipe data string
+      names.push(1, 2, 3, 4, 5); // tipe data number
+      names.push(["Ahmad", "Ja'far", "Ali"]); //memasukkan array ke dalam array
+      console.table(names);
+
+      /*
+      Notes : Perlu diingat
+      - Data di dalam array tidak ada batasannya
+      - Jadi kita bisa memasukkan data apapun ke dalam array baik string, boolean maupun number
+      - Bahkan kita juga bisa memasukkan array ke dalam array jika kita mau
+      */
+    </script>
+  </body>
+</html>
